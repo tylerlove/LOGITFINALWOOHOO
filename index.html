@@ -102,7 +102,7 @@
 		function showTasks(list){
 			$("#totalhours").empty();
 			$("#myOrgs").empty();
-			$("#list").append("<li> Name: " + list.Name + "<br> Phone Number: " + list.Phone + "<br> Email: " + 
+			$("#list").append("<li class='loginfo'> Name: " + list.Name + "<br> Phone Number: " + list.Phone + "<br> Email: " + 
 			list.Email + "<br> Organization: " + list.Organization + "<br> Things Done: " + list.ThingsDone + "<br> Hours: " + list.Hours + "<br> Date:" +
 			list.Date + "<br> Signature: <img src= "+list.Signature+" " + "</li>");		
 			
@@ -148,6 +148,18 @@
 			
 			#list{
 				width:100%;
+			}
+			
+			.loginfo{
+				 width: 100vw; 
+				 height: 56.25vw; /* 100/56.25 = 1.778 */
+				 background: pink;
+				 max-height: 100vh;
+				 max-width: 177.78vh; /* 16/9 = 1.778 */
+				 margin: auto;
+				 position: absolute;
+				 top:0;bottom:0; /* vertical center */
+				 left:0;right:0; /* horizontal center */
 			}
 		</style>
 	</head>
