@@ -44,23 +44,19 @@
 			}, 3000);
 		});
 
-        function addItem(){
+        	function addItem(){
+		        var taskToBeAdded = $("#newtask").val();
+		        //alert(taskToBeAdded);
+		                if(taskToBeAdded.indexOf('@') === -1 ){
+		                        alert(" youre missing a @");
+		                }
+		                else {
+		                        toDoDB.push(taskToBeAdded);
+		                }
+	
+	        }
 
-
-        var taskToBeAdded = $("#newtask").val();
-        //alert(taskToBeAdded);
-                if(taskToBeAdded.indexOf('@') === -1 ){
-                        alert(" youre missing a @");
-                }
-                else {
-                        toDoDB.push(taskToBeAdded);
-                }
-
-
-
-        }
-
-       function add(){
+       		function add(){
 			if ((document.forms["myForm"]["Name"].value !="") && 
 			(document.forms["myForm"]["Phone"].value !="")&&
 			(document.forms["myForm"]["Email"].value != "") &&
@@ -101,7 +97,7 @@
 				
 			else{
 				alert("You must fill in all textboxes!");
-				}
+			}
 		}
 		function showTasks(list){
 			$("#totalhours").empty();
@@ -150,7 +146,7 @@
 		<div data-role="page" id = "homePage">
 			<div data-role="header" style = "background-color:#00CE42" ;" data-position="fixed">
 				<div class = "logo">
-					<a href = "#homePage"><img src = "logit.png" align = "middle" style="width:130px; height:auto;"/></a>
+					<a href = "#homePage"><img src = "logit.PNG" align = "middle" style="width:130px; height:auto;"/></a>
 					<a href = "#aboutPage" style = "text-decoration: none"> Service Log </a>
 					<a href = "#getInvolved" style = "padding-left: 50px; text-decoration: none;"> Log It! </a>
 					<a href = "#yourProfile" style = "padding-left: 50px; text-decoration: none;"> Your Profile </a>
@@ -204,7 +200,7 @@
 		<div data-role="page" style = "background-color: white;" id="aboutPage">
 			<div data-role="header" style = "background-color:#00CE42;" data-position="fixed">
 				<div class = "logo">
-					<a href = "#homePage"><img src = "logit.png" align = "middle" style="width:130px; height:auto;"/></a>
+					<a href = "#homePage"><img src = "logit.PNG" align = "middle" style="width:130px; height:auto;"/></a>
 					<a href = "#aboutPage" style = "text-decoration: none"> Service Log </a>
 					<a href = "#getInvolved" style = "padding-left: 50px; text-decoration: none;"> Log It! </a>
 					<a href = "#yourProfile" style = "padding-left: 50px; text-decoration: none;"> Your Profile </a>
@@ -223,10 +219,10 @@
             <h1 align="center">Log It!</h1>
                 <div data-role="header" style = "background-color:#00CE42" data-position="fixed">
                     <div class = "logo">
-                        <a href = "#homePage"><img src = "logit.png" align = "middle" style="width:130px; height:auto;"/></a>
-						<a href = "#aboutPage" style = "text-decoration: none"> Service Log </a>				
-						<a href = "#getInvolved" style = "padding-left: 50px; text-decoration: none;"> Log It! </a>
-						<a href = "#yourProfile" style = "padding-left: 50px; text-decoration: none;"> Your Profile </a>      
+                        <a href = "#homePage"><img src = "logit.PNG" align = "middle" style="width:130px; height:auto;"/></a>
+			<a href = "#aboutPage" style = "text-decoration: none"> Service Log </a>				
+			<a href = "#getInvolved" style = "padding-left: 50px; text-decoration: none;"> Log It! </a>
+			<a href = "#yourProfile" style = "padding-left: 50px; text-decoration: none;"> Your Profile </a>      
                     </div>
                 </div>
 			<div id = "aboutUsParagraph"> <p>Please input your information here to log your community service experiences. </p>
