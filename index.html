@@ -161,6 +161,16 @@
 				 top:0;bottom:0; /* vertical center */
 				 left:0;right:0; /* horizontal center */
 			}
+			#homepagepic{
+				width: 100vw; 
+				height: 56.25vw; /* 100/56.25 = 1.778 */
+				background: pink;
+				max-height: 100vh;
+				max-width: 177.78vh; /* 16/9 = 1.778 */
+			
+				position: absolute;
+				left:0;right:0; /* horizontal center */
+			}
 		</style>
 	</head>
 	<body>
@@ -175,9 +185,9 @@
 			</div>
 			<div role="main" class="ui-content">
 				<div class="faderandom" style="width: 100%; height: 50%;" >
-					<a> <img src="http://www.sacredheartpioneers.com/sports/m-lacros/2013-14/Park_Clean_Photo_thumb.jpg"></a>
-					<a><img src="http://levelandflowsolutions.magnetrol.com/Portals/195594/images/Magnetrol%20Community%20Service.jpg"></a>
-					<a><img src="http://www.marianuniversity.edu/uploadedImages/_marianuniversityedu/Academic_Programs/CommunitySvcRaking-(4).jpg?n=2518"></a>	
+					<a> <img id = "homepagepic" src="http://www.sacredheartpioneers.com/sports/m-lacros/2013-14/Park_Clean_Photo_thumb.jpg"></a>
+					<a><img id = "homepagepic" src="http://levelandflowsolutions.magnetrol.com/Portals/195594/images/Magnetrol%20Community%20Service.jpg"></a>
+					<a><img id = "homepagepic" src="http://www.marianuniversity.edu/uploadedImages/_marianuniversityedu/Academic_Programs/CommunitySvcRaking-(4).jpg?n=2518"></a>	
 				</div>
 			</div>
 		</div>
