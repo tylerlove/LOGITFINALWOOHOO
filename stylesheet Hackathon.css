@@ -1,0 +1,59 @@
+#aboutUsParagraph{
+	width: 60%;
+	
+	height: 100%;
+	padding:auto; 
+	margin:auto; 
+	text-align:centre; 
+	font-family: "Lucida Sans Unicode", Georgia;
+	font-size: 90%;
+}
+
+.picture img { 
+	/*float: right; 
+	margin: 3px; 
+	width: 20%;
+	height: auto;*/
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	
+} 
+
+.logo img{
+    padding-right: 50px;
+    padding-left: 50px;
+	padding-top: 15px;
+	width: 20%;
+	height: auto;
+	vertical-align: middle;
+	
+}
+
+.footer{
+	bottom:0; 
+	position:fixed !important; 
+	top: auto !important; 
+	width:100%; 
+}
+
+.facebookBlock{
+	padding-right: 100px;
+    padding-left: 100px;
+	
+}
+
+.faderandom { 
+	position:relative; 
+	width:100%; 
+	height:550px; 
+	overflow:hidden;
+	
+}
+.faderandom img {
+	position:relative; 
+	left:0; 
+	top:0; 
+	width:100%;
+	height:700px;
+}
